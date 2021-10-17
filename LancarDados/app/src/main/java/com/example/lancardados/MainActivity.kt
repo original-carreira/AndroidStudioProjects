@@ -6,6 +6,8 @@ import android.widget.Button
 import android.widget.ImageView
 import kotlin.random.Random
 
+lateinit var imagemDado: ImageView
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         buttoAction.setOnClickListener {
             rolarDados()
         }
+        imagemDado = findViewById(R.id.ViewImagemDado)
     }
 
     private fun rolarDados() {
@@ -27,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-        val imagemDado = findViewById<ImageView>(R.id.ViewImagemDado)
         imagemDado.setImageResource(imagemAleatoria)
     }
 }
@@ -38,3 +40,7 @@ class MainActivity : AppCompatActivity() {
 //variável  criada para receber a alteração dinamica de imagem - usando uma expressão whem com um número aleatório definido em randomInt
 //usando o setImagemResource() para alterar a imgem apresentada. É passado como parâmetro a variável imagemAleatoria
 /*################################################################*/
+//melhorei o codigo com boas práticas usando o lateinit
+//retirei a linha da função rolarDados: val imagemDado = findViewById<ImageView>(R.id.ViewImagemDado) e a inicializei antes do onCreate como lateinit var imagemDado: ImageView
+//refiz a asssossiação dentro do oncreate com o findViewById como imagemDado = findViewById(R.id.ViewImagemDado)
+/*#################################################################*/

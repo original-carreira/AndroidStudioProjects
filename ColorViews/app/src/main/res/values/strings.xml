@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ColorViews</string>
+    <string name="box_one">Box One</string>
+    <string name="box_two">Box Two</string>
+    <string name="box_three">Box Three</string>
+    <string name="box_four">Box Four</string>
+    <string name="box_five">Box Five</string>
+    <string name="button_red">Botão Vermelho</string>
+    <string name="button_green">Botão Verde</string>
+    <string name="button_yellow">Botão Amarelo</string>
+    <string name="how_to_play">Como jogar</string>
+    <string name="tap_the_box_buttons">Tocar na tela</string>
+    <string name="red_button">VERMELHO</string>
+    <string name="yellow_button">AMARELO</string>
+    <string name="green_button">VERDE</string>
+</resources>

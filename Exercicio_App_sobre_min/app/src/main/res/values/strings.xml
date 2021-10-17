@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exercicio_App_sobre_min</string>
+    <string name="text_padrao">Texto de Apresentação</string>
+    <string name="descricao_objeto">foto 3X4</string>
+    <string name="text_conteudo">Este é meu texto de apresentação. Primeiro deverá ser lido sem importância</string>
+    <string name="qual_seu_nome">Digite o seu nome aqui.</string>
+    <string name="feito">Enter</string>
+</resources>
